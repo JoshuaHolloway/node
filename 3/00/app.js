@@ -35,5 +35,6 @@ app.use((req, res, next) => {
   res.render('404', { page_title: 'Page Not Found' });
 });
 //===========================
-app.listen(3000);
+const port_num = 3000;
+app.listen(port_num, () => console.log('http://localhost:3000'));
 //===========================
