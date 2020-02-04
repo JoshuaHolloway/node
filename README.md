@@ -1,15 +1,19 @@
 # node
 
-* 0 - Section 3: The Basics
-    * 00
-    * 01
-    * 02
-    * 03
-    * 04
+* 0 - Section 1: Intro
+    * 00: Running JavaScript outside of the browser!
+
+* 1 - Section 3: The Basics
+    * 00_p1: Creating a node server
+    * 00_p2: Sending responses
+    * 01: Routing Requests
+    * 02: Redirecting Requests
+    * 03: Parsing Request Bodies
+    * 04:
     * 05
     * 06
 
-* 1 - Section 5: Working with Express.js
+* 2 - Section 5: Working with Express.js
     * 00
         * Parsing incoming requests
     * 01
@@ -37,7 +41,7 @@
     * 12
         * Serving files statically
 
-* 2 - Section 6: Working with Dynamic Content
+* 2_ - Section 6: Working with Dynamic Content
     * 00
         * Sharing data across requests and users
     * 01
@@ -45,6 +49,6 @@
     * 02
         * Working on the Layout with Partials
 
-* 3 - Section 7: The Model View Controller (MVC)
+* 3_ - Section 7: The Model View Controller (MVC)
     * 00
         * Ported: Working on the Layout with Partials
