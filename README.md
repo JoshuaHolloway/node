@@ -6,10 +6,10 @@
 * 1 - Section 3: The Basics
     * 00_p1: Creating a node server
     * 00_p2: Sending responses
-    * 01: Routing Requests
-    * 02: Redirecting Requests
-    * 03: Parsing Request Bodies
-    * 04:
+    * 01: Routing requests
+    * 02: Redirecting requests
+    * 03: Parsing request bodies
+    * 04: Understanding event driven code execution
     * 05
     * 06
 
