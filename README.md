@@ -11,7 +11,8 @@
     * 03: Parsing request bodies
     * 04: Understanding event driven code execution
     * 05: Blocking/Non-Blocking Code
-    * 06
+    * 06: Use the node module system (routes.js/server.js)
+    * 07: Resources
 
 * 2 - Section 5: Working with Express.js
     * 00
