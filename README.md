@@ -16,9 +16,16 @@
 
 * 2 - Section 5: Working with Express.js
     * 00
-        * Parsing incoming requests
+        * Adding middleware
     * 01
-        * Parsing incoming requests
+        * How middleware works
+
+    ********************************* 
+    * 02
+        * Handling different routes
+    *********************************
+
+
     * 02
         * Using Express Router
     * 03
