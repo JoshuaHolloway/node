@@ -3,6 +3,7 @@ const express = require('express');
 
 const router = express.Router();
 //===========================
+// router.get('/admin/add-product', (req, res) => {
 router.get('/add-product', (req, res) => {
   console.log('JOSH: /josh');
   res.send(
@@ -10,6 +11,7 @@ router.get('/add-product', (req, res) => {
   );
 });
 //===========================
+// router.post('/admin/product', (req, res) => {
 router.post('/product', (req, res) => {
   console.log('**************');
   console.log('**************');
