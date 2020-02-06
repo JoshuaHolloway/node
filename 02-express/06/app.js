@@ -14,6 +14,7 @@ const shop_routes = require('./routes/shop.js');
 app.use(shop_routes);
 //===========================
 // handle errors:
+// -if no path has been hit yet, then throw error
 app.use((req, res, next) => {
   console.log('JOSH: ERROR!!!!');
   console.log('JOSH: ERROR!!!!');
