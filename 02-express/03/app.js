@@ -1,27 +1,25 @@
 // const routes = require('./routes');
 const express = require('express');
-const body_parser = require('body-parser');
-
 const app = express();
 
+// 3rd-Party (used to be inside express already):
+const body_parser = require('body-parser');
+//---------------
 // register parser
 app.use(body_parser.urlencoded({ extended: false }));
-
-// add middleware function
-app.use('/', (req, res, next) => {
-  console.log('Root route!');
-  next();
-});
-
-app.use('/josh', (req, res, next) => {
+//---------------
+// When user navigates to /josh an HTML page with a form is returned as a response
+app.use('/add-product', (req, res, next) => {
+  console.log('/add-product');
   // -this function will be handled for every incoming request
   // -next is a function that will be passed to this anonomous function (recursion?)
-  console.log('JOSH: /josh');
   res.send(
-    '<form action="/product" method="POST"><input type="text" name="josh_name"><button type="submit">Add Product:</button></form>'
+    '<form action="/product" method="POST"><input type="text" name="form_name"><button type="submit">Add Product:</button></form>'
   );
 });
-
+//---------------
+// -When the form is submitted from /josh, the data is sent as a post-request to this route.
+// -We then extract the body of the request.
 app.use('/product', (req, res) => {
   console.log('**************');
   console.log('**************');
@@ -37,9 +35,10 @@ app.use('/product', (req, res) => {
 app.use('/', (req, res, next) => {
   // -this function will be handled for every incoming request
   // -next is a function that will be passed to this anonomous function (recursion?)
-  console.log('JOSH: /');
-  res.send('<h1>JOSH: /</h1>');
+  console.log('Root: /');
+  res.send('<h1>Root /</h1><a href="/add-product">add-product</a>');
 });
 //---------------
-app.listen(3000);
+const port_num = 3e3;
+app.listen(port_num, () => { console.log('http://localhost:3000') });
 //---------------
