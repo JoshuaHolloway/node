@@ -21,6 +21,7 @@ app.use('/josh', (req, res) => {
   );
 });
 
+// .post will pass through only .post requests
 app.post('/product', (req, res) => {
   console.log('**************');
   console.log('**************');
