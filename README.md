@@ -24,18 +24,13 @@
     * 06: Adding a 404 error page
     * 07: Filtering paths
     * 08: Serving HTML pages
+    * 09: Returning a 404 page
 
     ********************************* 
-    * 09: Returning a 404 page
     * 10: Using a helper function for navigation
     * 11: Styling our pages
     * 12: Serving files statically
     *********************************
-
-    
-
-    
-
 
 * 2_ - Section 6: Working with Dynamic Content
     * 00
