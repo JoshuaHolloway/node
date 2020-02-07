@@ -26,9 +26,9 @@
     * 08: Serving HTML pages
     * 09: Returning a 404 page
     * 10: Using a helper function for navigation
+    * 11: Styling our pages
 
     ********************************* 
-    * 11: Styling our pages
     * 12: Serving files statically
     *********************************
 
