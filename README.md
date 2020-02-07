@@ -17,32 +17,25 @@
 * 2 - Section 5: Working with Express.js
     * 00: Adding middleware
     * 01: How middleware works
-
-    ********************************* 
     * 02: Handling different routes
     * 03: Parsing incoming requests
+    * 04: Limiting middleware execution to POST requests
+    * 05: Using Express Router
+    * 06: Adding a 404 error page
+    * 07: Filtering paths
+    * 08: Serving HTML pages
+
+    ********************************* 
+    * 09: Returning a 404 page
+    * 10: Using a helper function for navigation
+    * 11: Styling our pages
+    * 12: Serving files statically
     *********************************
 
+    
 
+    
 
-    * 04
-        * Using Express Router
-    * 05
-        * Using Express Router
-    * 06
-        * Adding a 404 error page
-    * 07
-        * Filtering paths
-    * 08
-        * Serving HTML pages
-    * 09
-        * Returning a 404 page
-    * 10
-        * Using a helper function for navigation
-    * 11
-        * Styling our pages
-    * 12
-        * Serving files statically
 
 * 2_ - Section 6: Working with Dynamic Content
     * 00
