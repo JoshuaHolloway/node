@@ -17,16 +17,11 @@ app.use(shop_routes);
 // handle errors:
 app.use((req, res, next) => {
   console.log('JOSH: ERROR!!!!');
-  console.log('JOSH: ERROR!!!!');
-  console.log('JOSH: ERROR!!!!');
-  console.log('JOSH: ERROR!!!!');
-  console.log('JOSH: ERROR!!!!');
-  console.log('JOSH: ERROR!!!!');
-  console.log('JOSH: ERROR!!!!');
   res.status(404);
   //   res.send('<h1>Page not found</h1>');
   res.sendFile(path.join(__dirname, 'views', '404.html'));
 });
 //===========================
-app.listen(3000);
+const port_num = 3e3;
+app.listen(port_num, () => console.log('http://localhost:3000'));
 //===========================
