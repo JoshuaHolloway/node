@@ -1,9 +1,9 @@
 # node
 
-* 0 - Section 1: Intro
+* 00 - Section 1: Intro
     * 00: Running JavaScript outside of the browser!
 
-* 1 - Section 3: The Basics
+* 01 - Section 3: The Basics
     * 00_p1: Creating a node server
     * 00_p2: Sending responses
     * 01: Routing requests
@@ -14,7 +14,7 @@
     * 06: Use the node module system (routes.js/server.js)
     * 07: Resources
 
-* 2 - Section 5: Working with Express.js
+* 02 - Section 5: Working with Express.js
     * 00: Adding middleware
     * 01: How middleware works
     * 02: Handling different routes
@@ -27,18 +27,14 @@
     * 09: Returning a 404 page
     * 10: Using a helper function for navigation
     * 11: Styling our pages
-
-    ********************************* 
     * 12: Serving files statically
-    *********************************
 
-* 2_ - Section 6: Working with Dynamic Content
-    * 00
-        * Sharing data across requests and users
-    * 01
-        * Working with EJS
-    * 02
-        * Working on the Layout with Partials
+* 03 - Section 6: Working with Dynamic Content
+    ********************************************
+    * 00: Sharing data across requests and users
+    * 01: Working with EJS
+    * 02: Working on the Layout with Partials
+    ********************************************
 
 * 3_ - Section 7: The Model View Controller (MVC)
     * 00
