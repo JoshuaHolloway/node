@@ -31,10 +31,10 @@
 
 * 03 - Section 6: Working with Dynamic Content
     ********************************************
-    * 00: Sharing data across requests and users
-    * 01: Working with EJS
-    * 02: Working on the Layout with Partials
+    * 300: Working with EJS
     ********************************************
+
+    * 301: Working on the Layout with Partials
 
 * 3_ - Section 7: The Model View Controller (MVC)
     * 00
