@@ -3,21 +3,14 @@ const path = require('path');
 const express = require('express');
 
 const rootDir = require('../util/path'); //.js
-
-// NEW: Added [78]
 const admin_data = require('./admin'); //.js
 
 const router = express.Router();
 //===========================
 router.get('/', (req, res) => {
   console.log('/ in app.ejs, products:');
-
-  // <!-- NEW: Added [90] -->
   const products = admin_data.products;
   console.log(products);
-
-  // <!-- NEW: Changed [90] -->
-  //res.sendFile(path.join(rootDir, 'views', 'shop.html'));
   res.render('shop', {
     prods: products,
     page_title: 'Shop Page',
