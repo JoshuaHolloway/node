@@ -11,7 +11,16 @@ router.get('/add-product', (req, res) => {
   console.log('JOSH: /josh');
   // res.sendFile(path.join(__dirname, '../', 'views', 'add-product.html'));
   res.sendFile(path.join(rootDir, 'views', 'add-product.ejs'));
-  res.render('add-product', { page_title: 'Add Products Page' });
+
+  // [301]
+  // res.render('add-product', { page_title: 'Add Products Page' });
+  res.render('add-product', {
+    pageTitle: 'Add Product',
+    path: '/admin/add-product',
+    formCSS: true,
+    productCSS: true,
+    activeAddProduct: true
+  });
 });
 //===========================
 router.post('/add-product', (req, res) => {
