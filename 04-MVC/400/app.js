@@ -11,8 +11,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 app.set('views', 'views');
 //===========================
-const admin_data = require('./routes/admin'); //.js
-app.use('/admin', admin_data.routes);
+// [400] 
+//const admin_data = require('./routes/admin'); //.js
+//app.use('/admin', admin_data.routes);
+const adminRoutes = require('./routes/admin'); //.js
+app.use('/admin', adminRoutes);
 //===========================
 const shop_routes = require('./routes/shop'); //.js
 app.use(shop_routes);

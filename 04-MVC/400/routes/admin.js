@@ -6,23 +6,24 @@ const path = require('path');
 const express = require('express');
 const router = express.Router();
 //===========================
-const products = [];
+// [400]
+//const products = [];
 //===========================
 // [400]: Moved anonymous function into product.js 
 const productsController = require('../controllers/products'); //.js
 router.get('/add-product', productsController.getAddProduct);
 //===========================
-router.post('/add-product', (req, res) => {
-  console.log('/add-product');
-  console.log(req.body);
-  products.push({ title: req.body.form_input_name });
-  res.redirect('/');
-});
+// [400]: Moved anonymous function into product.js
+router.post('/add-product', productsController.postAddProduct);
 //===========================
 router.get('/error', (req, res) => {
   res.sendFile();
 });
 //===========================
-exports.routes = router;
-exports.products = products;
+// [400]
+//exports.routes = router;
+//exports.products = products;
 //===========================
+module.exports = router;
+// -When you import this in app.js you don't need
+//  to use .router with this notation.
