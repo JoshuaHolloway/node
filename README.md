@@ -34,12 +34,12 @@
     * 301: Working on the layout with partials
 
 * 04 - Section 7: The Model View Controller (MVC)
-    
-    ********************************************
     * 400: Adding the controller
     ********************************************
-
     * 401: Finishing the controller
+    ********************************************
+
+    
 
     
 
