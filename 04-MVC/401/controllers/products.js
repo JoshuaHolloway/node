@@ -42,7 +42,6 @@ const josh = (req, res) => {
     });
 };
 
-
 exports.getAddProduct = getAddProduct;
 exports.postAddProduct = postAddProduct;
 exports.josh = josh;

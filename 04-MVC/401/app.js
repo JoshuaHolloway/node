@@ -2,6 +2,9 @@ const path = require('path');
 const express = require('express');
 const body_parser = require('body-parser');
 //===========================
+// [401]
+const errorController = require('./controllers/error'); //.js
+//===========================
 const app = express();
 //===========================
 // register parser
@@ -21,11 +24,7 @@ const shop_routes = require('./routes/shop'); //.js
 app.use(shop_routes);
 //===========================
 // handle errors:
-app.use((req, res, next) => {
-  console.log('----404----');
-  res.status(404);
-  res.render('404', { page_title: 'Page Not Found' });
-});
+app.use(errorController.get404);
 //===========================
 const port_num = 3e3;
 app.listen(port_num, () => console.log('http://localhost:3000/'));
