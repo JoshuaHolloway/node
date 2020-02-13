@@ -10,7 +10,7 @@ const router = express.Router();
 //===========================
 // [400]: Moved anonymous function into Controllers/products.js
 const productsController = require('../controllers/products'); // .js
-router.get('/', productsController.josh);
+router.get('/', productsController.getProducts);
 //===========================
 module.exports = router;
 //===========================
