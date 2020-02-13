@@ -54,6 +54,6 @@ const getProducts = (req, res) => {
 
 exports.getAddProduct = getAddProduct;
 exports.postAddProduct = postAddProduct;
-exports.josh = getProducts;
+exports.getProducts = getProducts;
 
 //exports.products = products;
