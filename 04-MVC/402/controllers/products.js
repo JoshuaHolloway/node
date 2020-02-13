@@ -38,10 +38,10 @@ const getProducts = (req, res) => {
 
     // [402]
     const products = Product.fetchAll();
+    console.log(products);
 
     // [400]: producst is now a global array local to this file
     //const products = admin_data.products;
-    console.log(products);
     res.render('shop', {
         prods: products,
         page_title: 'Shop Page',
