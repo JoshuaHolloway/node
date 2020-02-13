@@ -35,8 +35,10 @@
 
 * 04 - Section 7: The Model View Controller (MVC)
     * 400: Adding the controller
-    ********************************************
     * 401: Finishing the controller
+
+    ********************************************
+    * 402: Adding a product model
     ********************************************
 
     
