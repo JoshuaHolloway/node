@@ -21,4 +21,5 @@ app.use(shopRoutes);
 
 app.use(errorController.get404);
 
-app.listen(3000);
+const port_num = 3e3;
+app.listen(port_num, () => console.log('http://localhost:3000'));
