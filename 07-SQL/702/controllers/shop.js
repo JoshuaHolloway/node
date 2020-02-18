@@ -23,13 +23,30 @@ exports.getProduct = (req, res, next) => {
 };
 
 exports.getIndex = (req, res, next) => {
-  Product.fetchAll(products => {
-    res.render('shop/index', {
-      prods: products,
-      pageTitle: 'Shop',
-      path: '/'
-    });
-  });
+  // [702]: fetchAll will now return a promise
+  // Product.fetchAll(products => {
+  //   res.render('shop/index', {
+  //     prods: products,
+  //     pageTitle: 'Shop',
+  //     path: '/'
+  //   });
+  // });
+  Product.fetchAll()
+    .then(
+      ([rows, fieldData]) => { // destructure (pull out rows and fieldData)
+        console.log(rows);
+        console.log(fieldData);
+
+        // Want to render out page here
+        res.render('shop/index', {
+          prods: rows,
+          pageTitle: 'Shop',
+          path: '/'
+        });
+      }
+    ).catch(
+      err => consolle.log(err)
+    );
 };
 
 exports.getCart = (req, res, next) => {
