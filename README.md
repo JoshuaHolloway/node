@@ -36,15 +36,51 @@
 * 04 - Section 7: The Model View Controller (MVC)
     * 400: Adding the controller
     * 401: Finishing the controller
-
-    ********************************************
     * 402: Adding a product model
+
+    ********************************************
+    * 403: Storing data in files via the model
+    * 404: Fetching data from files via the model
     ********************************************
 
-    
+* 05 - Section 8: Enhancing the App
+    * 500: 
 
-    
+* 06 - Section 9: Dynamic Routes and Andvanced Models
+    * 600: Preparations
+    * 601: Adding the product ID to the path
 
-* 3_ - Section 7: The Model View Controller (MVC)
-    * 00
-        * Ported: Working on the Layout with Partials
+* 07 - Section 10: SQL
+    * 700: Setting up MySQL
+    * 701: 
+        * Connecting our app to the SQL database
+        * Basic SQL and creating a table
+        * Retrieving data
+
+    *********************************************
+    * 702: Fetching products
+    *********************************************
+
+* 08 - Section 11: Sequelize
+* 09 - Section 12: NoSQL and MongoDB
+* 10 - Section 13: Mongoose
+* 11 - Section 14: Session and Cookies
+    * 1100: Init
+
+* 12 - Section 15: Authentication
+* 13 - Section 16: Emails
+* 14 - Section 17: Advanced Authentication
+* 15 - Section 18: Validation
+* 16 - Section 19: Error Handling
+* 17 - Section 20: File Upload and Download
+* 18 - Section 21: Adding Pagination
+* 19 - Section 22: Async Requests
+* 20 - Section 23: Payments
+* 21 - Section 24: REST API's Part-1
+* 22 - Section 25: REST API's Part-2
+* 23 - Section 26: Async Await
+* 24 - Section 27: Websockets
+* 25 - Section 28: GraphQL
+* 26 - Section 29: Deployment
+* 27 - Section 30: Testing
+* 28 - Section 31: Node.js as a Build Tool
