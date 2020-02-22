@@ -56,9 +56,10 @@
         * Connecting our app to the SQL database
         * Basic SQL and creating a table
         * Retrieving data
+    * 702: Fetching products
 
     *********************************************
-    * 702: Fetching products
+    * 703: Fetching products 2
     *********************************************
 
 * 08 - Section 11: Sequelize
