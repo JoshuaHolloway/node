@@ -1,0 +1,24 @@
+<html>
+    <head></head>
+
+    <body>
+        <h1>Hello from static/index.html</h1>
+
+        <button id="get">Get Posts</button>
+        <button id="post">Create a Post</button>
+
+
+        <script>
+            const get_button = document.getElementById('get');
+            const post_button = document.getElementById('post');
+
+            get_button.addEventListener('click', () => {
+                fetch('http://localhost:8080/feed/posts')
+                    .then(res => res.json())
+                    .then(resData => console.log(resData))
+                    .catch(err => console.log(err));
+            });
+
+        </script>
+    </body>
+</html>
