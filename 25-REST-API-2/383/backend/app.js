@@ -12,6 +12,8 @@ const authRoutes = require('./routes/auth');
 
 const app = express();
 
+//===============================================
+
 const fileStorage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, 'images');
@@ -20,6 +22,8 @@ const fileStorage = multer.diskStorage({
     cb(null, new Date().toISOString() + '-' + file.originalname);
   }
 });
+
+//===============================================
 
 const fileFilter = (req, file, cb) => {
   if (
@@ -33,12 +37,16 @@ const fileFilter = (req, file, cb) => {
   }
 };
 
+//===============================================
+
 // app.use(bodyParser.urlencoded()); // x-www-form-urlencoded <form>
 app.use(bodyParser.json()); // application/json
 app.use(
   multer({ storage: fileStorage, fileFilter: fileFilter }).single('image')
 );
 app.use('/images', express.static(path.join(__dirname, 'images')));
+
+//===============================================
 
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -50,10 +58,16 @@ app.use((req, res, next) => {
   next();
 });
 
+//===============================================
+
 app.use('/feed', feedRoutes);
+
+//===============================================
 
 // JOSH [384]
 app.use('/auth', authRoutes);
+
+//===============================================
 
 app.use((error, req, res, next) => {
   console.log(error);
@@ -66,10 +80,11 @@ app.use((error, req, res, next) => {
   res.status(status).json({ message: message, data: data });
 });
 
+//===============================================
+
+const url = 'mongodb+srv://josh:WDl2I3Il2q9HtePk@cluster0-almxm.mongodb.net/products_test?retryWrites=true&w=majority';
 mongoose
-  .connect(
-    'mongodb+srv://maximilian:9u4biljMQc4jjqbe@cluster0-ntrwp.mongodb.net/messages?retryWrites=true'
-  )
+  .connect( url )
   .then(result => {
     app.listen(8080);
   })

@@ -32,7 +32,7 @@ exports.signup = (req, res, next) => {
             return user.save();
         })
         .then(result => {
-            res.status(201)
+            res.status(201) // resource was created.
             .json({
                 message: 'User Created!',
                 userId: result._id
