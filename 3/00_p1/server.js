@@ -5,6 +5,7 @@ const http = require('http');
 //  is called for every response
 const request_listener = (req, res) => {
   console.log(req);
+  // process.exit();
 }
 
 const server = http.createServer(request_listener);
